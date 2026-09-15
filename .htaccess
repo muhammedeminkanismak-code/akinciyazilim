@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+Options -Indexes
+AddType video/mp4 .mp4
+AddType audio/mpeg .mp3
+AddType audio/wav .wav
+AddType audio/ogg .ogg
+<FilesMatch "^\\.admin_pass$|^data\\.json$">
+  Require all denied
+</FilesMatch>
